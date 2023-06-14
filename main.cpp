@@ -10,6 +10,6 @@ int main()
     auto labels = kmeans_vec4<3, 10000>(dataPoints.data(), dataPoints.size());
 
     printf("\n------------------------------------\n");
-    for(uint32_t i = 0; i < 150; i++)
+    for(uint32_t i = 0; i < labels.size(); i++)
         printf("labels[%u] == %u\n", i, labels[i]);
 }

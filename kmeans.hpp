@@ -8,10 +8,8 @@
 
 #include "vec4.hpp"
 
-
 static std::random_device s_random_device;
 static std::default_random_engine s_random_engine(s_random_device());
-
 
 template<size_t centroidsCount, size_t it>
 [[nodiscard]] static std::vector<uint32_t> kmeans_vec4(const vec4* pDataPoints, const size_t dataCount)
@@ -29,6 +27,7 @@ template<size_t centroidsCount, size_t it>
 	/* init centroids */
 	for (size_t i = 0; i < centroidsCount; i++)
 	{
+		/* choose from one of the data points */
 		centroids[i].pos = pDataPoints[uniform_distribution(s_random_engine)];
 		centroids[i].count = 0.0f;
 	}
