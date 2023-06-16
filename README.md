@@ -1,6 +1,7 @@
 K-Means Clustering
 =====
 [![CMake](https://github.com/aotodev/iris_kmeans/actions/workflows/cmake.yml/badge.svg)](https://github.com/aotodev/iris_kmeans/actions/workflows/cmake.yml)
+[![license](https://img.shields.io/badge/license-MIT-blue.svg)](https://git.stabletec.com/utilities/vksbc/blob/master/LICENSE)
 
 Classifying the famous iris dataset using k-means clustering in C++ with SSE SIMD instructions
 
